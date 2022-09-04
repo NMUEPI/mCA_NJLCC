@@ -1,6 +1,6 @@
 # **Convert Illumina IDAT files to VCF files**
 
-**1.  Illumina GenCall**
+## **1.  Illumina GenCall**
 
     ${tool_path}/iaap-cli \
      gencall \
@@ -11,7 +11,7 @@
       --output-gtc \
       --gender-estimate-call-rate-threshold -0.1
 
-**2.  gtc2vcf**
+## **2.  gtc2vcf**
 
     bcftools +gtc2vcf \
      --no-version -Ou \
