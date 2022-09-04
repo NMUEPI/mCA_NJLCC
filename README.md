@@ -16,4 +16,4 @@ This repository has two directories:
 
     + Step 3 : MoChA Detection
 
-You can use Return 3094 to visit UK Biobank. If you want other data information , you can send us an email to .
+You can find the required UK Biobank data at https://biobank.ndph.ox.ac.uk/ukb/dset.cgi?id=3094.
