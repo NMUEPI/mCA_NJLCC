@@ -8,7 +8,7 @@ This repository has two directories:
 
 + `Process_SNP_Genotyped_Array_Data` is to convert the raw intensity data (IDAT) files from the Illumina Infinium Global Screening Array into VCF files. 
 
-+ `Detecting_mosaic_chromosomal_alterations` is to detect mosaic chromosomal alterations (mCAs). 
++ `Detect_mosaic_chromosomal_alterations` is to detect mosaic chromosomal alterations (mCAs). 
 
     + Step 1 : Phasing
 
