@@ -6,15 +6,15 @@ This repository contains custom scripts used for processing raw IDAT files from 
 
 This repository has two directories:
 
-+ `Array_Data_Processing` is to convert the raw intensity data (IDAT) files from the Illumina Infinium Global Screening Array into VCF files. 
++ `Array_Data_Processing` included the code used for converting the raw intensity data (IDAT) files from the Illumina Infinium Global Screening Array into VCF files.
 
-+ `mCAs_Detection` is to detect mosaic chromosomal alterations (mCAs). 
++ `mCAs_Detection` included the code used for detecting mosaic chromosomal alterations (mCAs).
 
-    + Step 1 : Phasing
+    + Step1: Phasing pipeline
 
-    + Step 2 : Imputation
+    + Step2: Imputation pipeline
 
-    + Step 3 : MoChA Detection
+    + Step3: Chromosomal alterations pipeline
 
 The mCA call sets from the UK Biobank can be obtained from dataset Return 3094 from UKB application 19808 at https://biobank.ndph.ox.ac.uk/ukb/dset.cgi?id=3094.
 
