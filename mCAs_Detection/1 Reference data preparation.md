@@ -48,7 +48,7 @@ You can find the required GRCh37 resources at https://github.com/freeseek/mocha#
      sed 's/^chr//' | grep -v gl | bgzip > /public/home/naq/ref/GRCh37/segdups.bed.gz && \
      tabix -f -p bed /public/home/naq/ref/GRCh37/segdups.bed.gz
 
-### 1000 Genomes project phase 3 imputation panel for beagle5 and impute5
+### 1000 Genomes project phase 3 imputation panel for impute5
 
     cd /public/home/naq/ref/GRCh37
     pfx="ALL.chr"
@@ -64,8 +64,6 @@ You can find the required GRCh37 resources at https://github.com/freeseek/mocha#
     wget -P /public/home/naq/ref/GRCh37 http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/cytoBand.txt.gz
 
 ## **2. Data Process** 
-
-This step is to create every chromosome files for phasing and imputation from reference genome.
 
     source ${config_path}/config.sh
 
