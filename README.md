@@ -4,7 +4,7 @@ This repository contains custom scripts used for processing raw IDAT files from 
 
 ## **Overview**
 
-This repository has two directories:
+This repository has three directories:
 
 + `Array_Data_Processing` included the code used for converting the raw intensity data (IDAT) files from the Illumina Infinium Global Screening Array into VCF files.
 
