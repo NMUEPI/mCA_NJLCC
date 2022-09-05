@@ -1,11 +1,11 @@
 # **Convert Illumina IDAT files to VCF files**
 
-## **1.  Illumina GenCall**
+## **1.  Convert IDAT files to GTC files**
 
-> The raw intensity data files (.idat) can be converted to genotype call binary files (.gtc) with genotype calls.
+> Convert raw Intensity Data files (.idat) to Genotype Call files (.gtc) with GenomeStudio software.
 
 
-## **2.  gtc2vcf**
+## **2.  Convert GTC files to VCF files**
 
     bcftools +gtc2vcf \
      --no-version -Ou \
