@@ -2,7 +2,7 @@
 
     NJLCC <- read.csv("NJLCC_mCA_upload.csv")
 
-## **Counts and prevalence of mosaic chromosomal alterations (mCAs) by event type and genomic location among Nanjing Lung Cancer Cohort (NJLCC) participants**
+## **Counts and prevalence of mCAs by event type and genomic location**
 
     func1=function(type){
        sumdata=data.frame(Copy_number_change=type,No.of.events_Overall_populations=paste(sum(NJLCC[,get(type)])," (",sum(NJLCC[,get(paste0(type,"g",sep=""))]),", ",paste0(sprintf("%1.2f",sum(NJLCC[,get(paste0(type,"g",sep=""))])/nrow(NJLCC)*100),"%"),")",sep=""),Proportion_Overall_populations=paste0(sprintf("%1.2f",sum(NJLCC[,get(type)])/sum(NJLCC[,All])*100),"%",sep=""),No.of.events_case=paste(sum(NJLCC[LC==1,get(type)])," (",sum(NJLCC[LC==1,get(paste0(type,"g",sep=""))]),", ",paste0(sprintf("%1.2f",sum(NJLCC[LC==1,get(paste0(type,"g",sep=""))])/nrow(NJLCC[LC==1,])*100),"%"),")",sep=""),Proportion_case=paste0(sprintf("%1.2f",sum(NJLCC[LC==1,get(type)])/sum(NJLCC[LC==1,All])*100),"%",sep=""),No.of.events_control=paste(sum(NJLCC[LC==0,get(type)])," (",sum(NJLCC[LC==0,get(paste0(type,"g",sep=""))]),", ",paste0(sprintf("%1.2f",sum(NJLCC[LC==0,get(paste0(type,"g",sep=""))])/nrow(NJLCC[LC==0,])*100),"%"),")",sep=""),Proportion_control=paste0(sprintf("%1.2f",sum(NJLCC[LC==0,get(type)])/sum(NJLCC[LC==0,All])*100),"%",sep=""))
